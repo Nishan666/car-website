@@ -4,9 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Arrinera</title>
+
+  <!-- fivicon -->
+  <link rel="shortcut icon" type="image/png" href="images/siteLogo.png"/>
+
+  <!-- font family for logo -->
+  <link href="http://fonts.cdnfonts.com/css/crenzo" rel="stylesheet">
+
+  <!-- using cdn for bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- using cdn for javascript -->
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+  <script src="index.js" charset="utf-8"></script>
 </head>
+
 <body>
 
+  <!-- navigation bar -->
+  <section id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-expand-md bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand my-navbar-title" href="#">
+              <img src="images/siteLogo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-center my-navbar-logo">
+               Arrinera
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse me-2" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#footer">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#cta">Event</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#cta">Accessories</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#cta">About</a>
+                      </li>
+                    </ul>
+                  </div>
+          </div>
+        </nav>
+  </section>
+
+
+
+  <div id="myCarousel" class="carousel" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="mask flex-center">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-md-7 col-12 order-md-1 order-2">
+              <h4>Present your <br>
+                awesome product</h4>
+              <p>Lorem ipsum dolor sit amet. Reprehenderit, qui blanditiis quidem rerum <br>
+                necessitatibus praesentium voluptatum deleniti atque corrupti.</p>
+              <a href="#">BUY NOW</a> </div>
+            <div class="col-md-5 col-12 order-md-2 order-1"><img src="images/car-front.png" class="mx-auto" alt="slide"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+<!-- using cdn for bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
