@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="index.js"></script>
+</head>
+<body>
+    <!-- main video part -->
+    <div id="divVideo">
+    <video autoplay loop id="myVideo" autoplay="false">
+        <source src="1.webm" type="video/webm">
+    </video>
+    </div>
+    <!-- bottom control section -->
+    <div class="content-vid">
+        <!-- for next and prev btn -->
+        <button class="btn-prev" id="prev-btn" onclick="prev()">
+            <img src="prev.png" alt="" width="50px" height="50px">
+        </button>
+        <button class="btn-next" id="next-btn" onclick="next()">
+            <img src="next.png" alt="" width="50px" height="50px">
+        </button>
+        <!-- the quote -->
+        <h1>Feel the car, drive it, and show it.</h1>
+        <!-- for start and mute btn -->
+        <div class="video-btn">
+
+
+
+            <div class="box-2">
+                <div class="btn-eng btn-two">
+            
+            <button id="myBtn" onclick="myFunction()">Start the engine</button>
+
+        </div>
+    </div>
+            <button id="myAud" onclick="myAudFunction()" class="muted"><img src="unmute.png" width="50px" height="50px" alt="unmute" id="mut-img"></button> 
+        </div>
+        </div>
+</div>
+
+
+<!-- javascript for the above ability (it also uses jquery) -->
+    <script>
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+        var videoFile1 = '1.webm';
+        var videoFile2 = '2.webm';
+        var videoFile3 = '3.webm';
+
+// function use to mute and unmute(toggle)
+    function myAudFunction(){
+    if( $("#myVideo").prop('muted') ) {
+            $("#myVideo").prop('muted', false);
+            $("#mut-img").attr("src","unmute.png");
+    } 
+    else 
+    {
+            $("#myVideo").prop('muted', true);
+            $("#mut-img").attr("src","mute.png");
+    }
+    };
+    // function use to start and stop engine
+    function myFunction(){
+    if (video.paused) {
+        video.play();
+        btn.innerHTML = "@#$%";
+    } else {
+        video.pause();
+        btn.innerHTML = "Start the engine";
+        }
+    }
+        // function that switch video src on click of prev btn
+    function prev() {
+        var a = $("#myVideo").get(0).currentSrc;
+        console.log(a);
+        switch (a) {
+            case 'file:///C:/Users/user/Videos/arrrrr/1.webm':
+
+                        $('#divVideo video source').attr('src', videoFile2);
+                        $("#divVideo video")[0].load();
+                        if (video.paused) {
+                        video.play();
+                        btn.innerHTML = "@#$%";
+                        } else {
+                        video.pause();
+                        btn.innerHTML = "Start the engine";
+                        }
+            break;
+            case 'file:///C:/Users/user/Videos/arrrrr/2.webm':
+                        $('#divVideo video source').attr('src', videoFile3);
+                        $("#divVideo video")[0].load();
+                        if (video.paused) {
+                        video.play();
+                        btn.innerHTML = "@#$%";
+                        } else {
+                        video.pause();
+                        btn.innerHTML = "Start the engine";
+                        }
+            break;
+            case 'file:///C:/Users/user/Videos/arrrrr/3.webm':
+                        $('#divVideo video source').attr('src', videoFile1);
+                        $("#divVideo video")[0].load();
+                        if (video.paused) {
+                        video.play();
+                        btn.innerHTML = "@#$%";
+                        } else {
+                        video.pause();
+                        btn.innerHTML = "Start the engine";
+                        }
+            break;                   
+            default: console.log("some thing went wrong")
+            break;
+        }
+    }
+
+    // function that switch video src on click of next btn
+    function next() {
+        var a = $("#myVideo").get(0).currentSrc;
+        console.log(a);
+        switch (a) {
+            case 'file:///C:/Users/user/Videos/arrrrr/1.webm':
+                        $('#divVideo video source').attr('src', videoFile2);
+                        $("#divVideo video")[0].load();
+                        if (video.paused) {
+                        video.play();
+                        btn.innerHTML = "@#$%";
+                        } else {
+                        video.pause();
+                        btn.innerHTML = "Start the engine";
+                        }
+            break;
+            case 'file:///C:/Users/user/Videos/arrrrr/2.webm':
+                        $('#divVideo video source').attr('src', videoFile3);
+                        $("#divVideo video")[0].load();
+                        if (video.paused) {
+                        video.play();
+                        btn.innerHTML = "@#$%";
+                        } else {
+                        video.pause();
+                        btn.innerHTML = "Start the engine";
+                        }
+            break;
+            case 'file:///C:/Users/user/Videos/arrrrr/3.webm':
+                        $('#divVideo video source').attr('src', videoFile1);
+                        $("#divVideo video")[0].load();
+                        if (video.paused) {
+                        video.play();
+                        btn.innerHTML = "@#$%";
+                        } else {
+                        video.pause();
+                        btn.innerHTML = "Start the engine";
+                        }
+            break;                    
+            default: console.log("u fucked u nick")
+                break;
+        }
+    }
+</script>
+</body>
+</html>
+
