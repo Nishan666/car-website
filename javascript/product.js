@@ -67,7 +67,7 @@ var searchFilter = () => {
 
 var disapperImg = () => {
 
-    console.log("hello nick");
+    document.getElementById("large-pic").src = "images/product-img/red-comb.png";
 }
 
 

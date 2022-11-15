@@ -71,22 +71,39 @@
                 </button>
                 <div class="collapse navbar-collapse me-2" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
+                       
 
 
 
 
-                            <!-- serach bar for product page -->
-                            <form action="javascript:" class="search-bar">
-                                <input type="search" id="search-in" name="search" pattern=".*\S.*" required>
-                                <button class="search-btn" type="submit">
-                                    <span>Search</span>
-                                </button>
-                            </form>
-
-                        </li>
 
 
+
+                        
+<li class="nav-item">
+
+    <!-- serach bar for product page -->
+    <form action="javascript:" class="search-bar" onclick="disapperImg()">
+        <input type="text" class="form-control-mmm" id="search-in" name="search" pattern=".*\S.*" required onkeyup="searchFilter()">
+        <button class="search-btn" type="submit">
+            <span>Search</span>
+        </button>
+    </form>
+
+</li>
+
+
+
+
+        <li class="nav-item">
+            <select class="form-select  filter-box" id="filterByBrand" onclick="disapperImg()" onchange="searchFilter()">
+                <option style="padding:2rem;" value="" selected>Filter by Brand</option>
+                <option style="padding:2rem;" class="brand-options" value="bmw">BMW</option>
+                <option style="padding:2rem;" class="brand-options" value="benz">BENZ</option>
+                <option style="padding:2rem;" class="brand-options" value="nissan">Nissan</option>
+            </select>
+        
+        </li>
 
 
                         
@@ -110,7 +127,7 @@
 <!-- one intro large pic -->
 
 <div>
-    <img src="images/product-img/into-large-img/luxury.jpg" width="100%">
+    <img id="large-pic" src="images/product-img/into-large-img/luxury.jpg" width="100%">
 </div>
 
 
