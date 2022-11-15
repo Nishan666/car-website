@@ -1,0 +1,115 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.content-vid {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 96%;
+    padding: 20px;
+}
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    padding-left: 35px;
+}
+#myAud{
+    background: none;
+    border: none;
+    float: right;
+    padding: 0;
+    margin: 0 5px 0 1px;
+}
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+.video-btn{
+    text-align: center;
+}
+#myVideo{
+width: 100%;
+}
+.btn-next{
+    float: right;
+}
+.btn-next,.btn-prev{
+    background: none;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+.btn-eng {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+}
+
+
+
+.btn-two {
+    margin: 0 auto;
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative; 
+  }
+  .btn-two #myBtn {
+    z-index: 2; 
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+  }
+  .btn-two::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.1);
+  }
+  .btn-two::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.1);
+  }
+  .btn-two:hover::before {
+    transform: rotate(-45deg);
+    background-color: rgba(255,255,255,0);
+  }
+  .btn-two:hover::after {
+    transform: rotate(45deg);
+    background-color: rgba(255,255,255,0);
+  }
+  
