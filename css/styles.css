@@ -205,9 +205,18 @@
   background: #000;
 }
 
+/* .auto-grid {
+	--auto-grid-min-size: 10rem;
+	display: grid;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+	grid-gap: 1rem;
+} */
+
+
 .center {
-  float: left;
-  padding: 3rem;
+  
+  padding: 3rem 1rem 3rem 1rem;
   text-align: center;
 }
 
@@ -284,14 +293,47 @@
   margin-top: 20rem;
 }
 
+
+@media only screen and (max-width: 767px) {
+	.main {
+		display: block;
+		margin-top: 35rem;
+		text-align: center;
+	}
+
+	.center{
+		display: flex;
+		justify-content: center;
+		margin: auto;
+		width: 50%;
+		padding: 1rem;
+		
+	}
+}
+
 .clear { clear:both; }
 
 .icon-img{
   margin-bottom: 2rem;
 }
 
+.icon-img-ele{
+	margin-bottom: 4rem;
+}
 
 /* concept section part  */
+
+.concept-heading{
+	font-family: 'CRENZO', sans-serif;
+	text-align: center;
+	background: rgb(47, 46, 130);
+		background: linear-gradient(283deg, rgba(47, 46, 130, 1) 0%, rgba(117, 0, 125, 1) 100%);
+	color:black;
+	margin: 0;
+	padding: 1rem 0 0 0;
+}
+
+
 :root {
 	 --duration: 20s;
 	 --delay: 20s;
@@ -459,7 +501,17 @@ background: linear-gradient(283deg, rgba(47,46,130,1) 0%, rgba(117,0,125,1) 100%
 }
 
 
-/* about our team setion */
+/* testomonial */
+
+.testomonial-heading{
+	font-family: 'CRENZO', sans-serif;
+		text-align: center;
+		background-color: #000;
+		color:white;
+		margin: 0;
+		padding: 1rem 0 0 0;
+}
+
 .about-team {
 	 margin: 0;
 	 min-height: 100vh;
@@ -521,4 +573,28 @@ background: linear-gradient(283deg, rgba(47,46,130,1) 0%, rgba(117,0,125,1) 100%
 }
  .container-team .card-team:not(:nth-child(5)) {
 	 margin-right: 1em;
+}
+
+
+
+
+/* footer sign up section */
+
+.sign-up-product {
+	color: #d9d9d9;
+	font-size: larger;
+	font-weight: 900;
+	margin-right: 0;
+	border-radius: 20%;
+	background-color: #f10505;
+	text-decoration: none;
+	padding: 1rem;
+	width: 230px;
+}
+
+
+/* removing underline and colur from browse button */
+.a-browse{
+	text-decoration: none;
+	color: #d9d9d9;
 }
