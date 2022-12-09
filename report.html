@@ -1,0 +1,72 @@
+<html onmousedown="Random();">
+
+<head>
+
+
+    <!-- using cdn for bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+
+    <link rel="stylesheet" href="css/report.css">
+
+
+
+</head>
+
+<body oncontextmenu="return false;" onmousedown="Random();">
+
+
+
+
+    <!-- navigation bar -->
+    <section id="navbar">
+        <nav class="navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-expand-md bg-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand my-navbar-title my-navbar-title-m" href="/">
+                    <img src="images/siteLogo.png" alt="Logo" width="40" height="40"
+                        class="d-inline-block align-text-center my-navbar-logo">
+                    Arrinera
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse me-2" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link my-navbar-title-m" href="/">Go To HOME</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+
+
+    <center id="startbutton" style="
+    margin-left: -10%;
+    margin-top: 20%;
+"><input type="button" onclick="play();" value="REPORT" id="start"
+            style="height: 100px; width: 200px; background: white; color: black; margin-left: 0px; border: 1px solid black; font-family: Franchise; font-size: 50px; box-shadow: black 5px 5px 0px 1px, black 4px 4px 0px 1px, black 3px 3px 0px 1px, black 2px 2px 0px 1px, black 1px 1px 0px 1px, black 0px 0px 0px 1px; margin-top: 0px; transition: all 0.2s ease 0s; position: fixed;"
+            onmousedown="style.boxShadow='none'; style.marginLeft='5px'; style.marginTop='5px'; style.color='white'; style.background='black';"
+            onmouseup="style.boxShadow='5px 5px 0px 1px black, 4px 4px 0px 1px black, 3px 3px 0px 1px black, 2px 2px 0px 1px black, 1px 1px 0px 1px black'; style.marginLeft='0px'; style.marginTop='0px'; style.color='black'; style.background='white';">
+    </center>
+    <div id="div" onmousedown="Random();">
+
+        <input value="Go on, click me bitch" class="button" id="button" onclick="Alert();" onmouseover="Random();"
+            onmousemove="" onfocus="Random();" onmouseup="Random();" type="button"
+            style="left: 82.7833%; top: 35.8732%;">
+
+    </div>
+
+    <script src="javascript/report.js"></script>
+
+</body>
+
+</html>

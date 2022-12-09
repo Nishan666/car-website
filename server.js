@@ -73,11 +73,12 @@ res.sendFile(__dirname + "/vintage.html");
 
 
 ///////////////////////////////////////////////////
-// buy setup
+// report
 
-// app.get("/buy",function(req,res){
-//     console.log(req);
-// });
+app.get("/report",function(req,res){
+res.sendFile(__dirname + "/report.html");
+    
+});
 
 
 app.use(express.static(path.join(__dirname, 'public')));
