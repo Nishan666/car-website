@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "CRENZO";
+    src: url("./fonts/CRENZO.otf") format('opentype');
+}
+
+nav {
+    background-color: #563d7c;
+    color: #fff;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 8px;
+}
+
+nav li a:hover {
+    color: yellow;
+    text-decoration: none;
+}
+
+
+.back-btn{
+    font-family: 'CRENZO', sans-serif;
+        text-align: center;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-weight: 900;
+    background-color: rgb(245, 8, 8);
+    font-size: 3rem;
+    width: 150%;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.back-box{
+    text-align: center;
+    
+}
+
+
+.my-navbar-title {
+    font-family: 'CRENZO', sans-serif;
+    font-size: 2rem;
+
+}
+
+
+.card-header{
+    font-family: 'CRENZO', sans-serif;
+    text-align: center;
+}

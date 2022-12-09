@@ -56,10 +56,10 @@
             <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content animate">
-            <a href="sport.html">Sport Car</a>
-            <a href="vintage.html">Vintage Car</a>
-            <a href="luxury.html">Luxury Car</a>
-            <a href="electric.html">Electric Car</a>
+            <a href="/sport">Sport Car</a>
+            <a href="/vintage">Vintage Car</a>
+            <a href="/luxury">Luxury Car</a>
+            <a href="/electric">Electric Car</a>
         </div>
     </div>
 
@@ -98,10 +98,12 @@
 
                 <li class="nav-item">
                     <select class="form-select  filter-box" id="filterByBrand" onclick="disapperImg()" onchange="searchFilter()">
-                        <option style="padding:2rem;" value="" selected>Filter by Brand</option>
-                        <option style="padding:2rem;" class="brand-options" value="bmw">BMW</option>
-                        <option style="padding:2rem;" class="brand-options" value="benz">BENZ</option>
-                        <option style="padding:2rem;" class="brand-options" value="nissan">Nissan</option>
+                        <option style="padding:2rem;" value="" selected>All Cars</option>
+                        <option style="padding:2rem;" class="brand-options" value="suzuki">Suzuki</option>
+                        <option style="padding:2rem;" class="brand-options" value="tata">Tata</option>
+                        <option style="padding:2rem;" class="brand-options" value="ranold">Ranold</option>
+                        <option style="padding:2rem;" class="brand-options" value="hundai">Hundai</option>
+
                     </select>
                 
                 </li>
@@ -149,21 +151,21 @@
 
 
 
-                <div class="col bmw col-sm-12 col-md-4 col-xl-3 ">
+                <div class="col suzuki col-sm-12 col-md-4 col-xl-3 ">
                     <div class="card">
-                        <img src="images/product-img/bmw.jpg" class="card-img-top" width="100%">
+                        <img src="\images\sized car\Screenshot 2022-12-06 124126.jpg" class="card-img-top" width="100%">
                         <div class="card-body pt-0 px-0">
                             <div class="d-flex flex-row justify-content-between mb-0 px-3">
                                 <small class="mt-1">BRAND</small>
-                                <h5 class="mt-1">BMW</h5>
+                                <h5 class="mt-1">suzuki</h5>
                             </div>
                             <div class="d-flex flex-row justify-content-between mb-0 px-3">
                                 <small class="mt-1">MODEL</small>
-                                <h6 class="mt-1 carModelName">skyline</h6>
+                                <h6 class="mt-1 carModelName">Breaze</h6>
                             </div>
                             <div class="d-flex flex-row justify-content-between mb-0 px-3">
                                 <small class="mt-1">STARTING AT</small>
-                                <h5 class="mt-1">&dollar;22,495&ast;</h5>
+                                <h5 class="mt-1">&dollar;10,495&ast;</h5>
                             </div>
                            
                             <div class="d-flex flex-row justify-content-between p-3 mid">
@@ -176,12 +178,12 @@
                                 </div>
                                 <div class="d-flex flex-column"><small class="mb-1">HORSEPOWER</small>
                                     <div class="d-flex flex-row"><img src="images/product-img/hose.jpg">
-                                        <h5 class="ml-1">135 hp&ast;</h5>
+                                        <h5 class="ml-1">111 hp&ast;</h5>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div class="d-flex mx-3 mt-3 mb-2 justify-content-center"><button type="button" class=" btn btn-danger btn-block"><small>BUILD &
+                            <div class="d-flex mx-3 mt-3 mb-2 justify-content-center"><button type="button" class=" btn btn-danger btn-block" onclick="funBuy()"><small>BUILD &
                                         PRICE</small></button></div>
                             
                         </div>
@@ -193,21 +195,21 @@
 
 
 
-                <div class="col benz col-sm-12 col-md-4 col-xl-3 ">
+                <div class="col suzuki col-sm-12 col-md-4 col-xl-3 ">
                     <div class="card">
-                        <img src="images/product-img/bmw.jpg" class="card-img-top" width="100%">
+                        <img src="\images\sized car\Screenshot 2022-12-06 124209.jpg" class="card-img-top" width="100%">
                         <div class="card-body pt-0 px-0">
                             <div class="d-flex flex-row justify-content-between mb-0 px-3">
                                 <small class="mt-1">BRAND</small>
-                                <h5 class="mt-1">BMW</h5>
+                                <h5 class="mt-1">suzuki</h5>
                             </div>
                             <div class="d-flex flex-row justify-content-between mb-0 px-3">
                                 <small class="mt-1">MODEL</small>
-                                <h6 class="mt-1 carModelName">supra</h6>
+                                <h6 class="mt-1 carModelName">Banalo</h6>
                             </div>
                             <div class="d-flex flex-row justify-content-between mb-0 px-3">
                                 <small class="mt-1">STARTING AT</small>
-                                <h5 class="mt-1">&dollar;22,495&ast;</h5>
+                                <h5 class="mt-1">&dollar;20,495&ast;</h5>
                             </div>
                 
                             <div class="d-flex flex-row justify-content-between p-3 mid">
@@ -219,13 +221,13 @@
                                 </div>
                                 <div class="d-flex flex-column"><small class="mb-1">HORSEPOWER</small>
                                     <div class="d-flex flex-row"><img src="images/product-img/hose.jpg">
-                                        <h5 class="ml-1">135 hp&ast;</h5>
+                                        <h5 class="ml-1">125 hp&ast;</h5>
                                     </div>
                                 </div>
                             </div>
                 
                             <div class="d-flex mx-3 mt-3 mb-2 justify-content-center"><button type="button"
-                                    class=" btn btn-danger btn-block"><small>BUILD &
+                                    class=" btn btn-danger btn-block" onclick="funBuy()"><small>BUILD &
                                         PRICE</small></button></div>
                 
                         </div>
@@ -237,17 +239,17 @@
 
 
 
-                <div class="col nissan col-sm-12 col-md-4 col-xl-3 ">
+                <div class="col tata col-sm-12 col-md-4 col-xl-3 ">
                     <div class="card">
-                        <img src="images/product-img/bmw.jpg" class="card-img-top" width="100%">
+                        <img src="\images\sized car\Screenshot 2022-12-06 124234.jpg" class="card-img-top" width="100%">
                         <div class="card-body pt-0 px-0">
                             <div class="d-flex flex-row justify-content-between mb-0 px-3">
                                 <small class="mt-1">BRAND</small>
-                                <h5 class="mt-1">BMW</h5>
+                                <h5 class="mt-1">TATA</h5>
                             </div>
                             <div class="d-flex flex-row justify-content-between mb-0 px-3">
-                                <small class="mt-1">MODEL</small>
-                                <h6 class="mt-1 carModelName">wrangler</h6>
+                                <small class="mt-1">Model</small>
+                                <h6 class="mt-1 carModelName">Tiago</h6>
                             </div>
                             <div class="d-flex flex-row justify-content-between mb-0 px-3">
                                 <small class="mt-1">STARTING AT</small>
@@ -263,13 +265,13 @@
                                 </div>
                                 <div class="d-flex flex-column"><small class="mb-1">HORSEPOWER</small>
                                     <div class="d-flex flex-row"><img src="images/product-img/hose.jpg">
-                                        <h5 class="ml-1">135 hp&ast;</h5>
+                                        <h5 class="ml-1">145 hp&ast;</h5>
                                     </div>
                                 </div>
                             </div>
                 
                             <div class="d-flex mx-3 mt-3 mb-2 justify-content-center"><button type="button"
-                                    class=" btn btn-danger btn-block"><small>BUILD &
+                                    class=" btn btn-danger btn-block" onclick="funBuy()"><small>BUILD &
                                         PRICE</small></button></div>
                 
                         </div>
@@ -281,21 +283,21 @@
 
 
 
-                <div class="col nissan col-sm-12 col-md-4 col-xl-3 ">
+                <div class="col ranold col-sm-12 col-md-4 col-xl-3 ">
                     <div class="card">
-                        <img src="images/product-img/bmw.jpg" class="card-img-top" width="100%">
+                        <img src="\images\sized car\Screenshot 2022-12-06 124250.jpg" class="card-img-top" width="100%">
                         <div class="card-body pt-0 px-0">
                             <div class="d-flex flex-row justify-content-between mb-0 px-3">
                                 <small class="mt-1">BRAND</small>
-                                <h5 class="mt-1">BMW</h5>
+                                <h5 class="mt-1">Reanold</h5>
                             </div>
                             <div class="d-flex flex-row justify-content-between mb-0 px-3">
                                 <small class="mt-1">MODEL</small>
-                                <h6 class="mt-1 carModelName">compass</h6>
+                                <h6 class="mt-1 carModelName">kiwi</h6>
                             </div>
                             <div class="d-flex flex-row justify-content-between mb-0 px-3">
                                 <small class="mt-1">STARTING AT</small>
-                                <h5 class="mt-1">&dollar;22,495&ast;</h5>
+                                <h5 class="mt-1">&dollar;15,495&ast;</h5>
                             </div>
                 
                             <div class="d-flex flex-row justify-content-between p-3 mid">
@@ -307,13 +309,13 @@
                                 </div>
                                 <div class="d-flex flex-column"><small class="mb-1">HORSEPOWER</small>
                                     <div class="d-flex flex-row"><img src="images/product-img/hose.jpg">
-                                        <h5 class="ml-1">135 hp&ast;</h5>
+                                        <h5 class="ml-1">120 hp&ast;</h5>
                                     </div>
                                 </div>
                             </div>
                 
                             <div class="d-flex mx-3 mt-3 mb-2 justify-content-center"><button type="button"
-                                    class=" btn btn-danger btn-block"><small>BUILD &
+                                    class=" btn btn-danger btn-block" onclick="funBuy()"><small>BUILD &
                                         PRICE</small></button></div>
                 
                         </div>
@@ -325,21 +327,21 @@
 
 
 
-                <div class="col nissan col-sm-12 col-md-4 col-xl-3 ">
+                <div class="col hundai col-sm-12 col-md-4 col-xl-3 ">
                     <div class="card">
-                        <img src="images/product-img/bmw.jpg" class="card-img-top" width="100%">
+                        <img src="\images\sized car\Screenshot 2022-12-06 124307.jpg" class="card-img-top" width="100%">
                         <div class="card-body pt-0 px-0">
                             <div class="d-flex flex-row justify-content-between mb-0 px-3">
                                 <small class="mt-1">BRAND</small>
-                                <h5 class="mt-1">BMW</h5>
+                                <h5 class="mt-1">hundai</h5>
                             </div>
                             <div class="d-flex flex-row justify-content-between mb-0 px-3">
                                 <small class="mt-1">MODEL</small>
-                                <h6 class="mt-1 carModelName">city</h6>
+                                <h6 class="mt-1 carModelName">i10</h6>
                             </div>
                             <div class="d-flex flex-row justify-content-between mb-0 px-3">
                                 <small class="mt-1">STARTING AT</small>
-                                <h5 class="mt-1">&dollar;22,495&ast;</h5>
+                                <h5 class="mt-1">&dollar;9,495&ast;</h5>
                             </div>
                 
                             <div class="d-flex flex-row justify-content-between p-3 mid">
@@ -351,13 +353,13 @@
                                 </div>
                                 <div class="d-flex flex-column"><small class="mb-1">HORSEPOWER</small>
                                     <div class="d-flex flex-row"><img src="images/product-img/hose.jpg">
-                                        <h5 class="ml-1">135 hp&ast;</h5>
+                                        <h5 class="ml-1">149 hp&ast;</h5>
                                     </div>
                                 </div>
                             </div>
                 
                             <div class="d-flex mx-3 mt-3 mb-2 justify-content-center"><button type="button"
-                                    class=" btn btn-danger btn-block"><small>BUILD &
+                                    class=" btn btn-danger btn-block" onclick="funBuy()"><small>BUILD &
                                         PRICE</small></button></div>
                 
                         </div>
@@ -369,21 +371,21 @@
 
 
 
-                <div class="col benz col-sm-12 col-md-4 col-xl-3 ">
+                <div class="col suzuki col-sm-12 col-md-4 col-xl-3 ">
                     <div class="card">
-                        <img src="images/product-img/bmw.jpg" class="card-img-top" width="100%">
+                        <img src="\images\sized car\Screenshot 2022-12-06 124325.jpg" class="card-img-top" width="100%">
                         <div class="card-body pt-0 px-0">
                             <div class="d-flex flex-row justify-content-between mb-0 px-3">
                                 <small class="mt-1">BRAND</small>
-                                <h5 class="mt-1">BMW</h5>
+                                <h5 class="mt-1">suzuki</h5>
                             </div>
                             <div class="d-flex flex-row justify-content-between mb-0 px-3">
                                 <small class="mt-1">MODEL</small>
-                                <h6 class="mt-1 carModelName">tesla</h6>
+                                <h6 class="mt-1 carModelName">swift</h6>
                             </div>
                             <div class="d-flex flex-row justify-content-between mb-0 px-3">
                                 <small class="mt-1">STARTING AT</small>
-                                <h5 class="mt-1">&dollar;22,495&ast;</h5>
+                                <h5 class="mt-1">&dollar;14,495&ast;</h5>
                             </div>
                 
                             <div class="d-flex flex-row justify-content-between p-3 mid">
@@ -395,13 +397,13 @@
                                 </div>
                                 <div class="d-flex flex-column"><small class="mb-1">HORSEPOWER</small>
                                     <div class="d-flex flex-row"><img src="images/product-img/hose.jpg">
-                                        <h5 class="ml-1">135 hp&ast;</h5>
+                                        <h5 class="ml-1">163 hp&ast;</h5>
                                     </div>
                                 </div>
                             </div>
                 
                             <div class="d-flex mx-3 mt-3 mb-2 justify-content-center"><button type="button"
-                                    class=" btn btn-danger btn-block"><small>BUILD &
+                                    class=" btn btn-danger btn-block" onclick="funBuy()"><small>BUILD &
                                         PRICE</small></button></div>
                 
                         </div>
@@ -412,21 +414,21 @@
 
   
 
-                <div class="col bmw col-sm-12 col-md-4 col-xl-3 ">
+                <div class="col hundai col-sm-12 col-md-4 col-xl-3 ">
                     <div class="card">
-                        <img src="images/product-img/bmw.jpg" class="card-img-top" width="100%">
+                        <img src="\images\sized car\Screenshot 2022-12-06 124354.jpg" class="card-img-top" width="100%">
                         <div class="card-body pt-0 px-0">
                             <div class="d-flex flex-row justify-content-between mb-0 px-3">
                                 <small class="mt-1">BRAND</small>
-                                <h5 class="mt-1">BMW</h5>
+                                <h5 class="mt-1">hundai</h5>
                             </div>
                             <div class="d-flex flex-row justify-content-between mb-0 px-3">
                                 <small class="mt-1">MODEL</small>
-                                <h6 class="mt-1 carModelName">continental</h6>
+                                <h6 class="mt-1 carModelName">i20</h6>
                             </div>
                             <div class="d-flex flex-row justify-content-between mb-0 px-3">
                                 <small class="mt-1">STARTING AT</small>
-                                <h5 class="mt-1">&dollar;22,495&ast;</h5>
+                                <h5 class="mt-1">&dollar;15,495&ast;</h5>
                             </div>
                 
                             <div class="d-flex flex-row justify-content-between p-3 mid">
@@ -438,13 +440,13 @@
                                 </div>
                                 <div class="d-flex flex-column"><small class="mb-1">HORSEPOWER</small>
                                     <div class="d-flex flex-row"><img src="images/product-img/hose.jpg">
-                                        <h5 class="ml-1">135 hp&ast;</h5>
+                                        <h5 class="ml-1">100 hp&ast;</h5>
                                     </div>
                                 </div>
                             </div>
                 
                             <div class="d-flex mx-3 mt-3 mb-2 justify-content-center"><button type="button"
-                                    class=" btn btn-danger btn-block"><small>BUILD &
+                                    class=" btn btn-danger btn-block" onclick="funBuy()"><small>BUILD &
                                         PRICE</small></button></div>
                 
                         </div>
@@ -454,21 +456,21 @@
 
 
 
-                <div class="col bmw col-sm-12 col-md-4 col-xl-3 ">
+                <div class="col suzuki col-sm-12 col-md-4 col-xl-3 ">
                     <div class="card">
-                        <img src="images/product-img/bmw.jpg" class="card-img-top" width="100%">
+                        <img src="\images\sized car\Screenshot 2022-12-06 124412.jpg" class="card-img-top" width="100%">
                         <div class="card-body pt-0 px-0">
                             <div class="d-flex flex-row justify-content-between mb-0 px-3">
                                 <small class="mt-1">BRAND</small>
-                                <h5 class="mt-1">BMW</h5>
+                                <h5 class="mt-1">suzuki</h5>
                             </div>
                             <div class="d-flex flex-row justify-content-between mb-0 px-3">
                                 <small class="mt-1">MODEL</small>
-                                <h6 class="mt-1 carModelName">phantom</h6>
+                                <h6 class="mt-1 carModelName">Alto</h6>
                             </div>
                             <div class="d-flex flex-row justify-content-between mb-0 px-3">
                                 <small class="mt-1">STARTING AT</small>
-                                <h5 class="mt-1">&dollar;22,495&ast;</h5>
+                                <h5 class="mt-1">&dollar;10,495&ast;</h5>
                             </div>
                 
                             <div class="d-flex flex-row justify-content-between p-3 mid">
@@ -480,199 +482,19 @@
                                 </div>
                                 <div class="d-flex flex-column"><small class="mb-1">HORSEPOWER</small>
                                     <div class="d-flex flex-row"><img src="images/product-img/hose.jpg">
-                                        <h5 class="ml-1">135 hp&ast;</h5>
+                                        <h5 class="ml-1">163 hp&ast;</h5>
                                     </div>
                                 </div>
                             </div>
                 
                             <div class="d-flex mx-3 mt-3 mb-2 justify-content-center"><button type="button"
-                                    class=" btn btn-danger btn-block"><small>BUILD &
+                                    class=" btn btn-danger btn-block" onclick="funBuy()"><small>BUILD &
                                         PRICE</small></button></div>
                 
                         </div>
                 
                     </div>
                 </div>
-
-
-
-
-                    
-                <div class="col nissan col-sm-12 col-md-4 col-xl-3 ">
-                        <div class="card">
-                            <img src="images/product-img/bmw.jpg" class="card-img-top" width="100%">
-                            <div class="card-body pt-0 px-0">
-                                <div class="d-flex flex-row justify-content-between mb-0 px-3">
-                                    <small class="mt-1">BRAND</small>
-                                    <h5 class="mt-1">BMW</h5>
-                                </div>
-                                <div class="d-flex flex-row justify-content-between mb-0 px-3">
-                                    <small class="mt-1">MODEL</small>
-                                    <h6 class="mt-1 carModelName">land cruser</h6>
-                                </div>
-                                <div class="d-flex flex-row justify-content-between mb-0 px-3">
-                                    <small class="mt-1">STARTING AT</small>
-                                    <h5 class="mt-1">&dollar;22,495&ast;</h5>
-                                </div>
-                
-                                <div class="d-flex flex-row justify-content-between p-3 mid">
-                                    <div class="d-flex flex-column"><small class=" mb-1">ENGINE</small>
-                                        <div class="d-flex flex-row"><img src="images/product-img/engin.jpg" width="35px" height="25px">
-                                            <div class="d-flex flex-column ml-1"><small class="ghj">1.4L MultiAir</small><small
-                                                    class="ghj">16V I-4 Turbo</small></div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex flex-column"><small class="mb-1">HORSEPOWER</small>
-                                        <div class="d-flex flex-row"><img src="images/product-img/hose.jpg">
-                                            <h5 class="ml-1">135 hp&ast;</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                
-                                <div class="d-flex mx-3 mt-3 mb-2 justify-content-center"><button type="button"
-                                        class=" btn btn-danger btn-block"><small>BUILD &
-                                            PRICE</small></button></div>
-                
-                            </div>
-                        </div>
-                 </div>
-
-
-
-
-
-
-                <div class="col bmw col-sm-12 col-md-4 col-xl-3 ">
-                            <div class="card">
-                                <img src="images/product-img/bmw.jpg" class="card-img-top" width="100%">
-                                <div class="card-body pt-0 px-0">
-                                    <div class="d-flex flex-row justify-content-between mb-0 px-3">
-                                        <small class="mt-1">BRAND</small>
-                                        <h5 class="mt-1">BMW</h5>
-                                    </div>
-                                    <div class="d-flex flex-row justify-content-between mb-0 px-3">
-                                        <small class="mt-1">MODEL</small>
-                                        <h6 class="mt-1 carModelName">tocoma</h6>
-                                    </div>
-                                    <div class="d-flex flex-row justify-content-between mb-0 px-3">
-                                        <small class="mt-1">STARTING AT</small>
-                                        <h5 class="mt-1">&dollar;22,495&ast;</h5>
-                                    </div>
-                        
-                                    <div class="d-flex flex-row justify-content-between p-3 mid">
-                                        <div class="d-flex flex-column"><small class=" mb-1">ENGINE</small>
-                                            <div class="d-flex flex-row"><img src="images/product-img/engin.jpg" width="35px" height="25px">
-                                                <div class="d-flex flex-column ml-1"><small class="ghj">1.4L MultiAir</small><small
-                                                        class="ghj">16V I-4 Turbo</small></div>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-column"><small class="mb-1">HORSEPOWER</small>
-                                            <div class="d-flex flex-row"><img src="images/product-img/hose.jpg">
-                                                <h5 class="ml-1">135 hp&ast;</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                        
-                                    <div class="d-flex mx-3 mt-3 mb-2 justify-content-center"><button type="button"
-                                            class=" btn btn-danger btn-block"><small>BUILD &
-                                                PRICE</small></button></div>
-                        
-                                </div>
-                        </div>
-                    </div>
-
-
-
-
-
-
-                    <div class="col nissan col-sm-12 col-md-4 col-xl-3 ">
-                        <div class="card">
-                            <img src="images/product-img/bmw.jpg" class="card-img-top" width="100%">
-                            <div class="card-body pt-0 px-0">
-                                <div class="d-flex flex-row justify-content-between mb-0 px-3">
-                                    <small class="mt-1">BRAND</small>
-                                    <h5 class="mt-1">BMW</h5>
-                                </div>
-                                <div class="d-flex flex-row justify-content-between mb-0 px-3">
-                                    <small class="mt-1">MODEL</small>
-                                    <h6 class="mt-1 carModelName">Mustang</h6>
-                                </div>
-                                <div class="d-flex flex-row justify-content-between mb-0 px-3">
-                                    <small class="mt-1">STARTING AT</small>
-                                    <h5 class="mt-1">&dollar;22,495&ast;</h5>
-                                </div>
-                    
-                                <div class="d-flex flex-row justify-content-between p-3 mid">
-                                    <div class="d-flex flex-column"><small class=" mb-1">ENGINE</small>
-                                        <div class="d-flex flex-row"><img src="images/product-img/engin.jpg" width="35px" height="25px">
-                                            <div class="d-flex flex-column ml-1"><small class="ghj">1.4L MultiAir</small><small
-                                                    class="ghj">16V I-4 Turbo</small></div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex flex-column"><small class="mb-1">HORSEPOWER</small>
-                                        <div class="d-flex flex-row"><img src="images/product-img/hose.jpg">
-                                            <h5 class="ml-1">135 hp&ast;</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                                <div class="d-flex mx-3 mt-3 mb-2 justify-content-center"><button type="button"
-                                        class=" btn btn-danger btn-block"><small>BUILD &
-                                            PRICE</small></button></div>
-                    
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-
-
-
-
-                    <div class="col benz col-sm-12 col-md-4 col-xl-3" >
-                        <div class="card">
-                            <img src="images/product-img/bmw.jpg" class="card-img-top" width="100%">
-                            <div class="card-body pt-0 px-0">
-                                <div class="d-flex flex-row justify-content-between mb-0 px-3">
-                                    <small class="mt-1">BRAND</small>
-                                    <h5 class="mt-1">BMW</h5>
-                                </div>
-                                <div class="d-flex flex-row justify-content-between mb-0 px-3">
-                                    <small class="mt-1">MODEL</small>
-                                    <h6 class="mt-1 carModelName">G-Wagon</h6>
-                                </div>
-                                <div class="d-flex flex-row justify-content-between mb-0 px-3">
-                                    <small class="mt-1">STARTING AT</small>
-                                    <h5 class="mt-1">&dollar;22,495&ast;</h5>
-                                </div>
-                    
-                                <div class="d-flex flex-row justify-content-between p-3 mid">
-                                    <div class="d-flex flex-column"><small class=" mb-1">ENGINE</small>
-                                        <div class="d-flex flex-row"><img src="images/product-img/engin.jpg" width="35px" height="25px">
-                                            <div class="d-flex flex-column ml-1"><small class="ghj">1.4L MultiAir</small><small
-                                                    class="ghj">16V I-4 Turbo</small></div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex flex-column"><small class="mb-1">HORSEPOWER</small>
-                                        <div class="d-flex flex-row"><img src="images/product-img/hose.jpg">
-                                            <h5 class="ml-1">135 hp&ast;</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                    
-                                <div class="d-flex mx-3 mt-3 mb-2 justify-content-center"><button type="button"
-                                        class=" btn btn-danger btn-block"><small>BUILD &
-                                            PRICE</small></button></div>
-                    
-                            </div>
-                        </div>
-                    </div>
-            
-
-
 
 
 
