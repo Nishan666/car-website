@@ -76,10 +76,8 @@ var disapperImg = () => {
 
 var a;
 var b;
-function funBuy(a,b) {
+function funBuy() {
     
-    console.log(a);
-    console.log(b);
 
 
 
